@@ -44,6 +44,7 @@ export function LoginForm () {
         onChange={handleUser} 
         onCopy={handleCopyPaste} 
         onPaste={handleCopyPaste} 
+        required
         type="text" 
         value={user} 
       />
@@ -56,6 +57,7 @@ export function LoginForm () {
         onChange={handlePassword} 
         onCopy={handleCopyPaste} 
         onPaste={handleCopyPaste} 
+        required
         type="password" 
         value={password} 
       />

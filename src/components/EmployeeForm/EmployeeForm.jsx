@@ -57,6 +57,7 @@ export function EmployeeForm () {
         maxLength={30}
         name="name"
         onChange={handleName} 
+        required
         value={name}
       />
       <label htmlFor="lastName" className="font-medium" >Last Name</label>
@@ -66,6 +67,7 @@ export function EmployeeForm () {
         maxLength={30}
         name="lastName" 
         onChange={handleLastName}
+        required
         value={lastName}
       />
       <label htmlFor="brithday" className="font-medium" >Brithday</label>
@@ -73,6 +75,7 @@ export function EmployeeForm () {
         className="w-full py-2 px-4 border shadow-sm" 
         dateFormat="yyyy/MM/dd" 
         onChange={(date) => setBrithday(Date.parse(date))}
+        required
         selected={brithday} 
       />
       <button type="submit" className="px-4 py-2 bg-purple-500 text-white font-semibold">Register</button>
