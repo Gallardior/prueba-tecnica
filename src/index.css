@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+  @apply focus:outline-none focus:ring focus:ring-purple-500 rounded-sm transition-colors
+}
